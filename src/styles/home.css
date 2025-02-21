@@ -76,9 +76,7 @@
 
 
 @media screen and (max-width: 480px) {
-    body{
-        overflow: hidden;
-    }
+
     .homeWrapper{
         display: none;
         flex-direction: column;
