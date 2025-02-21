@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.homeWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.inputsFieldsWrapper{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    border-radius: 10px;
+    background: #60e0a7;
+    box-shadow: rgba(26, 26, 27, 0.2) 0px 7px 29px 0px;
+}
+
+.todoTitle{
+    width: 93%;
+    height: 10%;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    background: #1b2f36;
+    font-family: "Bebas Neue", serif;
+}
+
+.addTodo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: white;
+    background: #1b2f36;
+    cursor: pointer;
+}
+
+.todoDescription{
+    width: 99%;
+    height: 87%;
+    border: 0;
+    color: white;
+    outline: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Roboto", serif;
+    background: #1b2f36;
+}
+
+.mobileNavBar{
+    display: none;
+}
+
+.mobilehomeWrapper{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    body{
+        overflow: hidden;
+    }
+    .homeWrapper{
+        display: none;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    .mobilehomeWrapper{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        overflow-y: hidden;
+        background: white;
+    }
+
+    .mobileHeaderWrapper{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        background: rgba(255, 255, 255, 0.507);
+    }
+
+    .mobileHeaderWrapper .logo{
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    .mobileProfilePic{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background: red;
+    }
+
+    .mobileProfileName{
+        font-size: 17px;
+        font-family: monospace;
+    }
+
+    .mobileScreenPoster{
+        margin-top: 100px;
+        width: 300px;
+    }
+
+    .mobilehomeWrapper h2{
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0;
+        color: #60e0a7;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .mobileinputsFieldsWrapper{
+        width: 87%;
+        height: 78%;
+        padding: 7px;
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        border-radius: 10px ;
+        background: #1b2e36;
+    }
+
+    .mobiletodoTitle{
+        width: 90%;
+        height: 8%;
+        border: 0;
+        outline: 0;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        border-bottom: 1px solid grey;
+        background: #1b2e36;
+        font-family: "Bebas Neue", serif;
+    }
+
+    .mobiletodoDescription{
+        width: 98.5%;
+        height: 80%;
+        border: 0;
+        outline: 0;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        background: #1b2e36;
+        font-size: 16px;
+        font-family: "Roboto", serif;
+    }
+
+    .mobileAddTodoBtn{
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+        align-self: flex-end;
+        border-radius: 10px;
+        color: white;
+        background: #60e0a7;
+    }
+
+    .addTodo{
+        display: none;
+    }
+
+    .mobileNavBar{
+        display: block;
+        width: 90%;
+        height: 60px;
+        position: fixed;
+        bottom: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #60e0a7;
+    }
+
+    .mobileIcons{
+        font-size: 27px;
+        color: #1b2e36;
+        z-index: 10;
+    }
+
+    .mobileOpenTodoTabBtn{
+        width: 70px;
+        height: 75px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        color: white;
+        background: #1b2f36;
+        position: absolute;
+        bottom: 20px;
+        border: 5px solid white;
+        cursor: pointer;
+    }
+}

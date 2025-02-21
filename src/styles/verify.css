@@ -1,0 +1,35 @@
+.verifying-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .verifying-content, .verified-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 70px;
+    height: 70px;
+    border: 6px solid #e0e0e0;
+    border-top: 6px solid #4a90e2;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .verified-content h2 {
+    color: green;
+    margin-top: 10px;
+  }
+  

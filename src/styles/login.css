@@ -1,0 +1,212 @@
+.loginWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.loginSide{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+}
+
+
+
+.error-border {
+    border: 2px solid red !important;
+  }
+  
+  .message {
+    padding: 50px;
+    margin-top: 10px;
+    color: rgba(230, 29, 29, 0.89);
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    background: whitesmoke;
+    border-radius: 10px;
+    top: 0;
+    font-family: "Phudu", serif, cursive;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .greenMessageSuccess{
+    color: white;
+    background: green;
+  }
+  
+
+.loginSide h1{
+    color: black;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginSide span{
+    font-size: 15px;
+    margin: 0;
+    font-family: "Phudu", serif;
+}
+
+.mobileLoginPoster{
+    display: none;
+}
+
+.loginSide .logo{
+    display: none;
+}
+
+.loginSide form{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+    /* background: greenyellow; */
+}
+
+.loginSide form .inputHolder{
+    width: 80%;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 50px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1.6px solid grey;
+    background: white;
+}
+
+.loginSide form .inputHolder input{
+    width: 80%;
+    height: 80%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    background: white;
+    color: black;
+}
+
+.loginSide form .inputHolder input::placeholder{
+    font-size: 15px;
+    font-family: "Phudu", serif;
+}
+
+.loginSide form button{
+    width: 80%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.671);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.loginSide form button:hover{
+    background: rgb(0, 0, 0);
+}
+
+.loginSide p{
+    display: flex;
+    font-family: "Phudu", serif;
+    font-size: 13px;
+    margin-top: 70px;
+}
+
+
+.loginRightSide{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.loginRightSide img{
+    width: 590px;
+}
+
+
+.loginRightSide span{
+    font-size: 29px;
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+
+.loginRightSide span b{
+    color: #28ac73;
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .loginWrapper{
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+    }
+
+    .message{
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .loginSide{
+        width: 100%;
+        height: 100%;
+    }
+
+    .loginSide .logo{
+        display: block;
+        width: 50px;
+    }
+
+   .loginSide form{
+        margin: 0;
+        margin-top: 30px;
+        height: 34%;
+        /* background: red; */
+    }
+
+    .mobileLoginPoster{
+        display: block;
+        width: 160px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .loginForm p{
+        margin: 0;
+        margin-top: 25px;
+    }
+
+    .loginRightSide{
+        display: none;
+    }
+
+    .loginSide form .inputHolder input{
+        width: 70%;
+    }
+}
