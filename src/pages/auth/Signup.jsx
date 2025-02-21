@@ -20,7 +20,7 @@ const Signup = () => {
 
   const navigate = useNavigate();
   const Api = "https://free-todo-api.vercel.app/user/sign-up";
-  const baseUrl = "http://localhost:5173";
+  const baseUrl = "https://lyra-todo.vercel.app/";
 
   const handleSignup = async (e) => {
     e.preventDefault();
